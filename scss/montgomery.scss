@@ -1,0 +1,775 @@
+.float-left {
+    float: left;
+}
+
+.off-canvas hr {
+    border-color: $highlight;
+}
+
+a, a:focus {
+    color: $highlight;
+}
+
+a:hover {
+    color: $over;
+}
+
+.dark, .dark:before, .dark:after {
+   background: $background-color;
+   margin-bottom: 0;
+   color: $canvas;
+}
+
+.dark a {
+    color: $highlight;   
+}
+
+.dark a:hover {
+    color: $over;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+.nobottom {
+    margin-bottom: 0;   
+}
+
+/* Typography
+-------------------------------------------------------------- */
+
+.main-navigation {
+    border-top: $half-space solid $canvas;
+    border-top-left-radius: $regular-space;
+    border-bottom-right-radius: 0; // This doesn't work as its trying to deal with the bottom right of the square not the bottom right of the border-top
+    padding-top: $half-space; 
+    text-align: right;
+    list-style-type: none;
+    color: $canvas;
+}
+
+
+/* Fixes
+-------------------------------------------------------------- */
+
+.breathe-before {
+ margin-top: 1em;
+}
+
+.big-breath {
+ margin-top: 2em;
+}
+
+.breathe-after {
+ margin-bottom: 1em;
+}
+
+.margin-flip img {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.comment-form label {
+    text-transform: uppercase;
+}
+
+/* Small & Medium screens */
+@media only screen and (max-width: 40em) { 
+    h2 {
+        font-size: 1.4rem;
+    }
+}
+
+/* Small & Medium screens */
+@media only screen and (min-width: 40.063em) { 
+    h2 {
+        font-size: 1.75rem;
+    }
+}
+
+.social-footer div, .social-footer p {
+    float: left;
+}
+
+/* Site Title */
+
+.site-title {
+    font-size: 2.75rem;
+    line-height: 1.4;
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+/* Category Title */
+.category-title {
+ text-transform: capitalize;
+ -ms-word-wrap: break-word;
+ word-wrap: break-word;
+}
+
+@media only screen and (max-width: 64em) {
+    .title-drop {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (min-width: 64.063em) {
+    .title-drop {
+        margin-top: 3em;
+    }
+}
+    
+/* Incase the large is not wanted
+Small screens */
+@media only screen and (max-width: 40em) {
+.small-title {
+        border-left: 5px solid $background-color;
+        padding-left: .2em; 
+        margin-left: -.45em;
+    }
+}
+
+.dark .category-title {
+    border-color: $canvas;
+}
+
+.push {
+ margin-left: 2em;   
+}
+
+.push-underline {
+    border-bottom: 1px solid $background-color;
+}
+
+.push-underline:hover {
+border-bottom: 1px solid $highlight;    
+}
+
+/* Fix for automatic last-child float right from foundation */
+.lastchildleft li:last-child {
+	float: left !important;
+}
+
+/* Block grid can also be used */
+.odd-clear li:nth-child(odd) {
+    clear: both;   
+}
+
+
+abbr[title] {
+    border-bottom: none;
+}
+abbr {
+    font-size: 100%;
+    cursor: default;
+}
+
+.comment-metadata time {
+    color: $change; 
+    font-style: italic;
+    margin-left: 2em;
+}
+
+.comment-metadata time:hover {
+    color: $highlight; 
+}
+
+.comment-content {
+    margin-top: 1em;
+    margin-left: 2em;
+}
+
+.comment-reply-link {
+  cursor: pointer;
+  margin: 0 0 1em;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  padding-top: .5rem;
+  padding-right: 1rem;
+  padding-bottom: .6rem;
+  padding-left: 1rem;
+  font-size: 1rem;
+  background: transparent;
+  -webkit-transition: background-color 300ms ;
+  -moz-transition: background-color 300ms ;
+  transition: background-color 300ms ;
+  font-weight: normal !important;  
+  transition: all 300ms;
+  border: 4px solid $background-color;   
+}
+
+/**
+ * 2.0 - Genericons
+ */
+
+.social-navigation {
+    font-size: 2rem;
+}
+
+.logo-without-genricon {
+    font-size: 2rem;
+}
+
+.social-navigation li {
+    margin-right: 1rem;
+}
+
+.logo-without-genricon li {
+    margin-right: 1rem;
+}
+
+#menu-social li {
+    float: right;
+}
+
+#menu-social-1 li {
+    float: left;
+}
+
+.icon {
+    display: inline-block;
+    fill: currentColor;
+    height: 1em;
+    position: relative;
+    top: -0.0625em;
+    vertical-align: middle;
+    width: 1em;
+}
+    
+.social-navigation a:before {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-family: "Genericons";
+	speak: none;
+}
+
+/* Required Worpess css - adapted from Twenty Sixteen */
+
+.wp-caption {
+	max-width: 100%;
+}
+
+.wp-caption-text {
+    margin-top: 1em;
+	font-style: italic;
+}
+
+.sticky {
+    /* Currently not using */
+}
+
+.screen-reader-text {
+	position: static !important;
+}
+
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	overflow: hidden;
+	position: absolute !important;
+	width: 1px;
+}
+
+.screen-reader-text {
+    position: absolute !important;
+}
+
+.gallery-caption {
+	font-style: italic;
+}
+
+img .alignleft {
+    padding-right: 1em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+}
+
+//
+.right-medium-up {
+    @include breakpoint (small) {
+        text-align: left;
+    }
+    @include breakpoint (medium) {
+        text-align: right;
+    }
+}
+
+// BUTTONS
+button, .button, input[type="submit"] {
+  cursor: pointer;
+  margin: 0 0 $regular-space;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  text-transform: uppercase;  
+  padding: $regular-space;
+  font-size: $regular-space;
+  background: none;
+  -webkit-transition: $background-color 300ms ;
+  -moz-transition: $background-color 300ms ;
+  transition: $background-color 300ms ;
+  font-weight: normal !important;  
+  transition: all 300ms;
+  color: $highlight;
+  border-color: $highlight;
+  border-style: solid;
+    
+    @include breakpoint(small) {
+        border-width: 4px;
+    }
+    @include breakpoint(medium) {
+        border-width: 6px;
+    }   
+}
+
+button:hover, button:focus, .button:hover, .button:focus, input[type="submit"]:hover, input[type="submit"]:focus { 
+    color: $canvas;
+    background: $highlight;
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+.menu-icon {
+    width: auto;
+    height: auto;
+}
+
+.menu-icon::after {
+    background: none;
+    box-shadow: none;
+}
+
+.menu-icon:hover::after {
+    background: none;
+    box-shadow: none;
+}
+
+.menu-icon {
+    width: auto;
+    height: auto;
+}
+
+.menu-icon::after {
+    background: none;
+    box-shadow: none;
+}
+
+.menu-icon:hover::after {
+    background: none;
+    box-shadow: none;
+}
+
+.full-highlight button, .full-highligh .button, .full-highligh input[type="submit"] {
+    color: $canvas;
+    border-color: $canvas;
+}
+
+.full-highlight button:hover, .full-highlight button:focus, .full-highlight .button:hover, .full-highlight .button:focus, .full-highlight input[type="submit"]:hover, .full-highlight input[type="submit"]:focus { 
+    color: $highlight;
+    background: $canvas;
+}
+
+.logo-height {
+    height: auto;
+}
+
+.callout.alert {
+    background-color: $alert;
+}
+
+.callout {
+    border: 0;
+}
+
+.last-left:last-child {
+    float: left;
+}
+
+/* Round
+-------------------------------------------------------------- */
+
+.round {
+    border-radius: 50%;
+    border: 5px solid $canvas;
+}
+
+.outer {
+    border-radius: 50%;
+    border: 3px solid $highlight;
+    padding: $half-space;
+    display: block;
+}
+
+/* today's background color */
+.ui-datepicker-today 
+{
+    background: $highlight;
+}
+
+ /* current input value background color */
+.ui-datepicker-current-day
+{
+    background: $over;
+}
+
+
+.ui-datepicker-header {
+    background: $highlight;
+    padding: 1rem;
+}
+
+.ui-datepicker-prev {
+    color: $canvas;
+    padding-right: 1rem;
+}
+
+.ui-datepicker-next {
+    color: $canvas;
+}
+
+.ui-datepicker-prev:hover, .ui-datepicker-next:hover {
+    color: $over;
+}
+
+.ui-state-disabled {
+    color: red;
+}
+
+.second-rows li {
+    line-height: 2.5rem;
+    margin: .5rem 0;
+}
+
+.second-rows li:nth-child(odd) {
+    background: #999;
+    color: $canvas;
+}
+
+.backed {
+    color: $highlight
+}
+
+table.ui-datepicker-calendar {
+    width: 100%;
+}
+
+.flex {
+    display: flex;          /* establish flex container */
+    flex-direction: column; /* stack flex items vertically */
+    position: relative;  
+}
+
+.over-flex {
+    position: absolute; 
+    top: 50%;                         /* vertical alignment */
+    background-color:rgba(255, 255, 255, 0.66); //rgba has alpha so not sure about how to have a variable
+    text-align: center;
+    border-width: $half-space;
+    border-color: $highlight;
+    border-style: solid;
+    padding: 2rem;
+    -webkit-transition: $background-color 300ms ;
+    -moz-transition: $background-color 300ms ;
+    transition: $background-color 300ms ;
+    font-weight: normal !important;  
+    transition: all 300ms;
+    color: $highlight;
+    left: 50%;  
+    transform: translate(-50%, -50%); /* horizontal, vertical alignment fine tuning */
+ }
+
+@media only screen and (max-width: 40em) {
+    .medium-title {
+        left: 30%;
+        transform: translate(-10%, -50%);
+    }
+}
+
+@media only screen and (max-width: 40em) {
+    .long-title {
+        left: 20%;
+        transform: translate(-10%, -50%);
+    }
+}
+
+.over-flex:hover {
+    background-color: $highlight;
+    color: $canvas;
+}
+
+.over-flex-no-hover:hover {
+    background-color: rgba(255, 255, 255, 0.66); //rgba has alpha so not sure about how to have a variable
+    color: $highlight;
+}
+
+/* Small screens */
+    .text-center-small {
+        text-align: center;
+    }
+
+/* Medium up screens */
+@media only screen and (min-width: 40.063em) { 
+    .text-center-small {
+        text-align: left;
+    }
+}
+
+.special-hr {
+    height: .1rem;
+    background: $canvas;
+    border: .2rem $canvas solid;
+    border-radius: 10px 0;
+}
+
+/* Small screens */
+    .text-right-medium {
+        text-align: left;
+    }
+
+/* Medium up screens */
+@media only screen and (min-width: 40.063em) { 
+    .text-right-medium {
+        text-align: right;
+    }
+}
+
+/* Small screens */
+    .text-right-large {
+        text-align: left;
+    }
+
+/* Medium up screens */
+@media only screen and (min-width: 64.063em) { 
+    .text-right-large {
+        text-align: right;
+    }
+}
+
+/* Small screens */
+    .text-center-right-medium {
+        text-align: center;
+    }
+
+/* Medium up screens */
+@media only screen and (min-width: 40.063em) { 
+    .text-center-right-medium {
+        text-align: right;
+    }
+}
+
+.right {
+    float: right;
+}
+
+.site-footer, .site-footer:before, .site-footer:after {
+    border-bottom-width: none;
+}
+
+.parallax {
+        min-height: 15em;
+    }
+
+@media only screen and (max-width: 40.063em) {
+    .parallax {
+        padding-top: 10em;
+        padding-bottom: 10em;
+    }
+}
+
+/* Parallax large up */
+@media only screen and (min-width: 64.063em) {     
+    .parallax {
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        // background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+}
+
+.off-canvas .menu li {
+    width: 100%;
+    text-align: right;
+}
+
+.accordion-title {
+    color: $highlight;
+    border: none;
+    font-size: 1em;
+}
+
+.accordion-content {
+    color: $background-color;
+    border: none;
+}
+
+.flex-video iframe, .flex-video object, .flex-video embed, .flex-video video {
+    top: inherit;
+}
+
+.orbit-previous, .orbit-next {
+    color: $highlight;
+}
+
+.orbit-previous:hover, .orbit-next:hover, .orbit-previous:active, .orbit-next:active, .orbit-previous:focus, .orbit-next:focus {
+    background-color: $highlight;
+}
+
+@media only screen and (max-width: 40em) {
+    .orbit-previous, .orbit-next { 
+        padding: .5rem;
+    }
+    .orbit-slide {
+    padding: 0 3.5em;
+    }
+}
+
+@media only screen and (min-width: 40.063em) {
+    .orbit-slide {
+        padding: 0 6em;
+    }
+}
+
+.pagination .current {  
+    background: $highlight;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input[type=range] {
+    /*removes default webkit styles*/
+    -webkit-appearance: none;
+    
+    /*fix for FF unable to apply focus style bug */
+    border: 1px solid white;
+    
+    /*required for proper track sizing in FF*/
+    width: 100%;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: $highlight;
+    margin-top: -4px;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+
+input[type=range]::-moz-range-track {
+    width: 300px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-moz-range-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: $highlight;
+}
+
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring{
+    outline: 1px solid white;
+    outline-offset: -1px;
+}
+
+input[type=range]::-ms-track {
+    width: 300px;
+    height: 5px;
+    
+    /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+    background: transparent;
+    
+    /*leave room for the larger thumb to overflow with a transparent border */
+    border-color: transparent;
+    border-width: 6px 0;
+
+    /*remove default tick marks*/
+    color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+    background: #777;
+    border-radius: 10px;
+}
+input[type=range]::-ms-fill-upper {
+    background: #ddd;
+    border-radius: 10px;
+}
+input[type=range]::-ms-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: $highlight;
+}
+input[type=range]:focus::-ms-fill-lower {
+    background: #888;
+}
+input[type=range]:focus::-ms-fill-upper {
+    background: #ccc;
+}
+
+.boxed {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 2.4375rem;
+    padding: .5rem;
+    border: 1px solid #cacaca;
+    margin: 0 0 1rem;
+    font-family: inherit;
+    font-size: 1rem;
+    color: $highlight;
+    background-color: #fefefe;
+    box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
+    border-radius: 0;
+    transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none
+}

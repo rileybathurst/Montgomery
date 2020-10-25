@@ -1,0 +1,89 @@
+.full {
+	position: relative;
+	background: $canvas;
+	float: left;
+	margin-bottom: 1.5em;
+	padding-top: 1.5em;
+    border-bottom: 1px solid $change;
+}
+
+/* Medium Up screens - fixes header issue */
+@media only screen and (min-width: 40.063em) {
+    .full {
+        width: 100%;   
+    }
+}
+
+.full:before, .full:after {
+   content: "";
+   position: absolute;
+   background: $canvas; /* Match the background */
+   top: 0;
+   bottom: -1px;    /* fix for border-bottom to line up */
+   width: 9999px;   /* some huge width */
+   z-index: -1;
+   border-bottom: 1px solid $change;
+}
+
+.full:before { 
+   right: 100%; 
+}
+
+.full:after {
+	left: 100%;
+}
+
+.full-img img {
+    width: 100%;
+}
+
+// full highlight
+.full-highlight {
+	position: relative;
+	background: $highlight;
+	float: left;
+	margin-bottom: 1.5em;
+	padding-top: 1.5em;
+    border-bottom: 1px solid $change;
+}
+
+/* Medium Up screens - fixes header issue */
+@media only screen and (min-width: 40.063em) {
+    .full-highlight {
+        width: 100%;   
+    }
+}
+
+.full-highlight:before, .full:after {
+   content: "";
+   position: absolute;
+   background: $highlight; /* Match the background */
+   top: 0;
+   bottom: -1px;    /* fix for border-bottom to line up */
+   width: 9999px;   /* some huge width */
+   z-index: -1;
+}
+
+.full-highlight:before { 
+   right: 100%; 
+}
+
+.full-highlight:after {
+	left: 100%;
+}
+
+.full-highlight h1, .full-highlight h2, .full-highlight h3, .full-highlight h4, .full-highlight h5, .full-highlight h6, .full-highlight p {
+    color: $canvas;
+}
+
+.full-highlight a {
+    color: $canvas;
+}
+
+.full-highlight hr {
+    border-color: $canvas;
+}
+
+.no-bottom {
+    margin-bottom: 0;
+}
